@@ -1,0 +1,174 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+html{
+/*   height: 100%;
+  width: 100%; */
+  background: url('race-car-driver-wallpaper-1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body{
+  text-align: center;
+  margin-top: 4%;
+}
+#container{
+  border: 7px solid white;
+  height: 800px;
+  width: 33.33%;
+  margin: 0 33.33%;
+  background-color: rgba(159, 9, 9, 50%);
+  border-radius: 5px;
+}
+#display{
+  border: 2px red solid;
+  height: 125px;
+  width: 95%;
+  margin: 2.5%;
+  background: rgba(230, 230, 230, 70%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+#inputDisplay{
+  text-align: right;
+  font-size: 375%;
+  margin: 0;
+  padding-top: 5%;
+  padding-right: 5px;
+  font-family: 'Orbitron', sans-serif;
+}
+#inputs{
+  display: flex;
+  height: 70%;
+  padding: 3px;
+  margin-top: 5px;
+}
+#numbers{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.digits{
+  height: 25%;
+  width: 28%;
+  margin: 5px;
+  font-size: 200%;
+  background: rgba(59, 144, 186, 60%);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 5px;
+}
+.digits:hover{
+  background: rgba(230, 230, 230, 70%);
+  border: 3px solid white;
+}
+#operators{
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 40%;
+  align-items: center;
+  justify-content: center;
+}
+.op{
+  width: 40%;
+  height: 30%;
+  margin: 5px;
+  font-size: 200%;
+  font-weight: bold;
+  background: rgba(204, 204, 204, 60%);
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 5px;
+}
+.op:hover{
+  background: rgba(230, 230, 230, 70%);
+  border: 3px solid white;
+}
+#equal{
+  width: 75%;
+  height: 100px;
+  font-size: 200%;
+}
+#clear{
+  font-size: 22px;
+  width: 75vw;
+}
+#back{
+  font-size: 200%;
+  width: 75vw;
+}
+img{
+  width: 25%;
+  height: auto;
+}
+#historyContainer{
+  margin: 0 33%;
+  width: 33%;
+  height: 300px;
+}
+#historyContainer h2{
+  text-decoration: underline;
+  color: white;
+  font-size: 200%;
+  margin: 2%;
+}
+#history{
+  color: white;
+  font-size: 175%;
+}
+#clearMemory{
+  font-size: 150%;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 500px) {
+  #container{
+    height: 100%;
+    width: 75%;
+    margin: 0 3%;
+  }
+
+}
+@media screen and (max-width: 1000px) {
+  #container{
+    height: 100%;
+    width: 75%;
+    margin: 0 15%;
+  }
+
+}

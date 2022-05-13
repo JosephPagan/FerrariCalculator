@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+		<title>Ferrari Calculator</title>
+
+		<!-- external CSS link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section id='container'>
+      <section id='display'>
+        <h2 id='inputDisplay'></h2>
+      </section>
+      <img src='css/ferrari-logo-transparent.png' alt='logo'></img>
+      
+      <section id='inputs'>
+        <section id='numbers'>
+          <button id='one' class='button digits'>1</button>
+          <button id='two' class='button digits'>2</button>
+          <button id='three' class='button digits'>3</button>
+          <button id='four' class='button digits'>4</button>
+          <button id='five' class='button digits'>5</button>
+          <button id='six' class='button digits'>6</button>
+          <button id='seven' class='button digits'>7</button>
+          <button id='eight' class='button digits'>8</button>
+          <button id='nine' class='button digits'>9</button>
+          <button id='zero' class='button digits'>0</button>
+        </section>
+        <section id='operators'>
+          <button id='add' class='button op'>+</button>
+          <button id='subtract' class='button op'>-</button>
+          <button id='multiply' class='button op'>*</button>
+          <button id='divide' class='button op'>/</button>
+
+          <button id='back' class='button op'>&larr;</button>          
+          <button id='equal' class='button op'>=</button>
+          <button id='clear' class='button op'>CLEAR</button>
+        </section>
+      </section>
+      
+    </section>
+    <button id='clearMemory' class='button op'>CLEAR MEMORY</button>
+    <section id='historyContainer'>
+      <h2>Memory</h2>
+      <span id='history'></span>
+    </section>
+
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
